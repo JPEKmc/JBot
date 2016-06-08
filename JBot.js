@@ -1,8 +1,8 @@
 /**
  * Created by JPEK on 5/22/16.
  */
-var _Version = (0.1);
-var Discord = require (discord.js);
+var VERSION = 0.1.0;
+var Discord = require(discord.js);
 var bot = new Discord.Client();
 bot.on("message", function(message) {
 if(message.contect === "/hello")
@@ -11,5 +11,5 @@ if(message.contect === "/hello")
 
     }
 });
-bot.setPlayingGame("JBot " + _Version);
-bot.loginWithToken("wtokenHere");
+bot.setPlayingGame("JBot " + VERSION);
+bot.loginWithToken("tokenHere");
